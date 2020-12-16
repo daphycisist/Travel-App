@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "../Button/Button";
 import './HeroSection.css';
 import '../../App.css';
 
+import videoTest from "../../videos/travel.mp4";
+
 const HeroSection = () => {
   return (
     <div className="hero-container">
-      <video src="../../videos/video-2.mp4"></video>
+      <video src={videoTest} autoPlay loop muted />
+      
       <h1>ADVENTURE AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className="hero-btns">
